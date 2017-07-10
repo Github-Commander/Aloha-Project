@@ -597,8 +597,9 @@ li {
   }
   .social li {
 display: inline-block;
+  }
 }
-}
+/* This is a comment */
 
   
 
