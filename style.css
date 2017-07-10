@@ -1,0 +1,604 @@
+
+
+/* ------------------- Desktop ----------720px--------------- */
+
+/************* Body ******************/
+
+*{
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  font-size: 14px;
+  margin: 0 auto;
+}
+body,button,input,select,textarea {
+  color: #2d2d2d;
+  font-family: 'PlayfairDisplay-Regular',sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2;
+}
+
+/****************** Header ***********************/
+
+.site-header {
+display: flex;  
+justify-content: space-between;
+padding-top: 1rem;
+padding-bottom: 1rem;
+padding-left: 2%;
+padding-right: 2%;
+margin-top: 1.5rem;
+}
+.logo {
+flex-basis: 20%;
+  align-self: flex-start;
+  order: 1;
+}
+.logo img {
+max-width: 120px;
+height: auto;
+}
+.cart {
+flex-basis: 20%;  
+align-self: flex-end;
+cursor: pointer;  
+width: 48px;  
+margin-right: 15px;
+text-align: right; 
+order: 3;
+}
+
+/***************** Heading & Paragraphs *****************/
+
+h1, h2, h3 {
+  font-family: 'PlayfairDisplay-Regular',serif;
+  line-height: 1;
+}
+h2 {
+font-size: 2.4rem;
+font-style: italic;
+margin-bottom: 1.5rem;  
+}
+section h2 {
+  text-align: center;
+}
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+/********************* Anchors ***********************/
+
+a,h3 {
+  color: #e2574c;
+}
+a:hover {
+  color: #b64036;
+}
+
+/********************* Navigation ***********************/
+
+.navigation {
+  align-self: center; 
+  order: 2;
+  flex-basis: 60%;
+}
+.navigation ul {
+  text-align: center;  
+  padding-top: 2%;
+}
+ol, ul {
+  list-style: none;  
+}
+.navigation li a{
+  content: "";
+  display: inline-block;
+  height: 82px;
+  margin: -82px 0 0;
+  text-decoration: none;
+}
+.navigation li {
+  display: inline-block;
+  font-weight: 700;
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+ul {
+  text-decoration: none;
+}
+li {
+  color: red;  
+}
+
+/***************** Banner *********************/
+
+.banner {
+ width: 100%;
+  height: 400px;
+  background-image: url(images/banner-girl.png), url(images/flower-bkgd.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: contain, cover;
+  background-position: center; 
+background-repeat: no-repeat;
+position: relative;
+}
+.banner-text-container {
+    color: #fff;
+    font-weight: 700;
+    left: 50%;
+    line-height: 1;
+    position: absolute;
+    text-align: center;
+    text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+#flower {
+  position: relative;
+  z-index: 0.5;
+  height: 30%;
+  top:0;
+  left: 0;
+}
+#banner-girl {
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  top: 40px;
+  vertical-align: center;
+}
+
+/************************ About *************************/
+
+.about {
+text-align: center;  
+}
+.heavy {
+  font-style: normal;
+  font-weight: 700;
+}
+section {
+  padding: 4rem 0;
+}
+
+.about-text {
+font-size: 1.15em;
+}
+.about p {
+  color: black;
+  font-size: 1.20rem;
+}
+.about-text h2 {
+  margin-bottom: 1px;
+}
+
+/************************* Products ***********************/
+
+.products {
+  padding: 0;  
+}
+.product-category {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.category-square:before, .category-wide:before {
+  content: "";
+  display: block;
+}
+.category-name {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+  position: absolute;
+  text-transform: uppercase;
+  transform: translate(-30%,-30%);
+  text-align: center;
+  top: 50%;
+}
+.category-name a{
+  text-decoration: underline;
+  color: white;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+.category-wide:first-child {
+  border-left: 0;
+  border-right: 4px solid white;
+}
+.category-wide.mens {
+  background:url('images/mens-category.jpg') no-repeat 50%;
+  height: auto;
+  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+}
+.category-wide {
+  max-width: 100%;
+  flex-basis: 50%;
+}
+.category-square {
+  max-width: 100%;
+  flex-basis: 25%;
+}
+.category-wide:first-child {
+  border-right: 3px solid white;
+}
+.category-square.trends {
+  background: url('images/trends-category.jpg') no-repeat 50%;
+  height: auto;
+  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+}
+.category-square.glasses {
+  background: url('images/glasses-category.jpg') no-repeat 50%;
+  height: auto;
+  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+}
+.category-square.sale {
+  background:url('images/sale-category.jpg') no-repeat 50%;
+  height: auto;
+  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+}
+.category-square.bags {
+  background:url('images/bags-category.jpg') no-repeat 50%;
+  height: auto;
+  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+}
+.category-wide.womens {
+  background:url('images/womens-category.jpg') no-repeat 50%;
+  height: auto;
+  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+}
+.category-wide:before {
+  padding-top: 50%;
+}
+.category-square, .category-wide {
+  border: 4px solid #fff;
+  position: relative;
+}
+
+/********************** Newsletter ************************/
+
+.newsletter {
+  background:url('images/wave-bkgd.jpg') no-repeat bottom;
+  z-index:1;
+  height:200px;
+  width:100%;
+  height: 343px;
+  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;  
+  color: black;
+  margin-bottom: 8px;
+}
+.collection{
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.season {
+  font-size: 3em;
+  font-weight: 400;
+}
+img {
+  height: auto;
+}
+.newsletter p {
+  margin: 0 auto;
+  font-size: 1rem;
+}
+.newsletter-container {
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 0;
+}
+.heavy {
+  font-weight: 700;
+  font-style: normal;
+}
+.newsletter-container h2,p {
+  color: white;
+}
+.newsletter h2 {
+  font-style: italic;
+}
+input[type="email"] {
+  border-radius: 25px;
+  width: 100%;
+  margin-top: 3%;
+  padding: .8rem;
+}
+input[type="submit"] {
+  padding: .6rem;
+  background-color: red;
+  font-weight: 650;
+  padding: .8rem 3rem;
+  position: absolute;
+  color: white;
+  right: .25rem;
+  top: 1.3rem;
+  border-radius: 25px;
+  border: 0;
+}
+.sign-up {
+  margin: auto 0;
+  position: relative;
+  display: block;
+  width: 60%;
+  margin-left: 15%;
+}
+
+
+/************************ Footer **************************/
+
+.site-footer {
+  background-color:black;
+  height: auto;
+  color: white;
+  padding: 3rem 0;
+  text-align: left;
+  display: flex;
+}
+.site-footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer a {
+  color: white;
+}
+.container {
+  padding: 0 2%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.colophon {
+  line-height: 1.3;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin-right: 34%;
+}
+.copyright {
+  color: white;
+}
+.contact {
+  color: white;
+}
+.address p {
+  color: grey;
+}
+.social a {
+  text-decoration: none;
+}
+.network {
+  text-decoration: none;
+}
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+li {
+  color: red;  
+  text-decoration: none;
+}
+.social {
+  margin-left: 150px;
+}
+
+/************************ Carousel **************************/
+
+.gallery-cell1 {
+  background: url(images/checked-stretch-dress.jpg);
+  height: 300px;
+  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+  max-width: 100%;
+  height: 320px;
+  width: 320px;
+}
+.gallery-cell2 {
+  background: url(images/blue-hipster-backpack.jpg);
+  height: 300px;
+  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+  max-width: 100%;
+  height: 320px;
+  width: 320px;
+}
+.gallery-cell3 {
+  background: url(images/blue-silk-dress.jpg);
+  height: 300px;
+  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+  max-width: 100%;
+  height: 320px;
+  width: 320px;
+}
+.gallery-cell4 {
+  background: url(images/stretch-knit-dress.jpg);
+  height: 300px;
+  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+  max-width: 100%;
+  height: 320px;
+  width: 320px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.gallery-cell5 {
+  background: url(images/cotton-blue-shirt.jpg);
+  height: 300px;
+  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+  max-width: 100%;
+  height: 320px;
+  width: 320px;
+}
+.gallery-cell6 {
+  background: url(images/pink-dotted-dress.jpg);
+  height: 300px;
+  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+  max-width: 100%;
+  height: 320px;
+  width: 320px;
+}
+.gallery-cell7 {
+  background: url(images/cotton-yellow-tshirt.jpg);
+  height: 300px;
+  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+  max-width: 100%;
+  height: 320px;
+  width: 320px;
+}
+.gallery-cell8 {
+  background: url(images/demin-overall-shorts.jpg);
+  height: 300px;
+  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+  max-width: 100%;
+  height: 320px;
+  width: 320px;
+}
+section h2 {
+  text-align: center;
+  margin-bottom: 90px;
+  margin-top: 50px;
+}
+.gallery.js-flickity {
+  height: 500px;
+}
+.product-type1 {
+  text-align: center;
+  position: absolute;
+  margin-bottom: 1rem;
+  margin-top: 270px;
+  margin-left: 120px;
+}
+
+/* ------------------- Mobile ------480px ---------------- */
+
+@media screen and (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+     -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+    text-align: center;
+  }
+  .logo {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+    width: 50px;
+  }
+.logo img {
+  width: 50%;
+  height: auto;
+
+}
+  .cart {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    cursor: pointer;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+    text-align: right;
+    width: 50px;
+  }
+.navigation {
+  align-self: center; 
+  order: 2;
+  flex-basis: 100%;
+}
+.navigation ul {
+  text-align: center;  
+  padding-top: 2%;
+  border-bottom: 1px solid #d7d7d7;
+}
+ol, ul {
+  list-style: none;  
+}
+.navigation li a{
+  content: "";
+  display: inline-block;
+  height: 82px;
+  margin: -82px 0 0;
+  text-decoration: none;
+}
+.navigation li {
+  display: inline-block;
+  font-weight: 700;
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+ul {
+  text-decoration: none;
+}
+li {
+  color: red;  
+  }
+  .social li {
+display: inline-block;
+}
+}
+
+  
+

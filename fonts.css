@@ -1,0 +1,91 @@
+
+
+/*my fonts*/
+@font-face {
+  font-family: 'Raleway-Medium';
+  src: url('Raleway-Medium.eot');
+  src: url('Raleway-Medium.woff2') format('woff2'),
+       url('Raleway-Medium.woff') format('woff'),
+       url('Raleway-Medium.ttf') format('truetype'),
+       url('Raleway-Medium.svg#Raleway-Medium') format('svg'),
+       url('Raleway-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway-LightItalic';
+  src: url('Raleway-LightItalic.eot');
+  src: url('Raleway-LightItalic.woff2') format('woff2'),
+       url('Raleway-LightItalic.woff') format('woff'),
+       url('Raleway-LightItalic.ttf') format('truetype'),
+       url('Raleway-LightItalic.svg#Raleway-LightItalic') format('svg'),
+       url('Raleway-LightItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway-Light';
+  src: url('Raleway-Light.eot');
+  src: url('Raleway-Light.woff2') format('woff2'),
+       url('Raleway-Light.woff') format('woff'),
+       url('Raleway-Light.ttf') format('truetype'),
+       url('Raleway-Light.svg#Raleway-Light') format('svg'),
+       url('Raleway-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PlayfairDisplay-Regular';
+  src: url('PlayfairDisplay-Regular.eot');
+  src: url('PlayfairDisplay-Regular.woff2') format('woff2'),
+       url('PlayfairDisplay-Regular.woff') format('woff'),
+       url('PlayfairDisplay-Regular.ttf') format('truetype'),
+       url('PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg'),
+       url('PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PlayfairDisplay-Italic';
+  src: url('PlayfairDisplay-Italic.eot');
+  src: url('PlayfairDisplay-Italic.woff2') format('woff2'),
+       url('PlayfairDisplay-Italic.woff') format('woff'),
+       url('PlayfairDisplay-Italic.ttf') format('truetype'),
+       url('PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg'),
+       url('PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PlayfairDisplay-BoldItalic';
+  src: url('PlayfairDisplay-BoldItalic.eot');
+  src: url('PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+       url('PlayfairDisplay-BoldItalic.woff') format('woff'),
+       url('PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+       url('PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg'),
+       url('PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PlayfairDisplay-Bold';
+  src: url('PlayfairDisplay-Bold.eot');
+  src: url('PlayfairDisplay-Bold.woff2') format('woff2'),
+       url('PlayfairDisplay-Bold.woff') format('woff'),
+       url('PlayfairDisplay-Bold.ttf') format('truetype'),
+       url('PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg'),
+       url('PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway-MediumItalic';
+  src: url('Raleway-MediumItalic.eot');
+  src: url('Raleway-MediumItalic.woff2') format('woff2'),
+       url('Raleway-MediumItalic.woff') format('woff'),
+       url('Raleway-MediumItalic.ttf') format('truetype'),
+       url('Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg'),
+       url('Raleway-MediumItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
