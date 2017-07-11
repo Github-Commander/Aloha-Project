@@ -597,9 +597,31 @@ li {
   }
   .social li {
 display: inline-block;
+min-width: 25px;
   }
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
 }
-/* This is a comment */
+.network {
+  display: none;
+}
+.container {
+    padding: 0 2%;
+    margin: 0 auto;
+    width: 100%;
+}
+.colophon {
+    line-height: 1.5;
+    width: 100%;
+}
+.season {
+  font-size: 2.5em;
+}
+}
 
   
 
