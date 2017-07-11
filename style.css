@@ -307,6 +307,7 @@ img {
   -o-background-size: cover;  
   color: black;
   margin-bottom: 8px;
+  position: relative;
 }
 .collection{
   font-size: 1.25rem;
@@ -325,9 +326,10 @@ img {
 }
 .newsletter-container {
   text-align: center;
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   padding-top: 0;
+  position: relative;
 }
 .heavy {
   font-weight: 700;
@@ -340,30 +342,39 @@ img {
   font-style: italic;
 }
 input[type="email"] {
+  padding: .5rem 1.75rem;
+  padding-right: 35px;
+  width: 90%;
   border-radius: 25px;
-  width: 100%;
-  margin-top: 3%;
-  padding: .8rem;
 }
 input[type="submit"] {
-  padding: .6rem;
-  background-color: red;
-  font-weight: 650;
-  padding: .8rem 3rem;
+  background-color: #e2574c;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  padding: .5rem 1.75rem; 
   position: absolute;
-  color: white;
-  right: .25rem;
-  top: 1.3rem;
+  right: 5%;
+  top: .1rem;
   border-radius: 25px;
-  border: 0;
+  border-color: 1px white;
+  margin: 0 auto;
+  height: auto;
 }
 .sign-up {
-  margin: auto 0;
-  position: relative;
   display: block;
-  width: 60%;
-  margin-left: 15%;
+  margin: 2rem auto 0;
+  position: relative;
+  width: 90%;
 }
+section {
+  padding: 4rem 0;
+}
+form {
+  position: relative;
+  width: 90%;
+}
+
 
 
 /************************ Footer **************************/
