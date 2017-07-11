@@ -9,7 +9,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="min-width-600.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">  
     <link rel="stylesheet" href="flickity.css" media="screen">
@@ -50,6 +49,7 @@
 </section> 
 
 <!-- About ........................................................ -->
+
 <section class="about">
 <div class="about-text">
 <h2>Hand-Crafted <span class="heavy">Styles</span></h2> 
@@ -101,50 +101,56 @@ selection of products or sign-up for updates below.</p>
 <section class="featured">
 <div class="carousel-container">
 <h2>Most-Loved <span class="heavy">Products</span></h2>
-  <div class="gallery js-flickity">
-    <div class="gallery-cell1">
-    <div class="product-wrapepr">
+  <div class="gallery main-carousel">
+    <div class="carousel-cell">
+      <img src="images/checked-stretch-dress.jpg">
       <p class="product-type">Dresses</p>
       <h3>Checekd Stretch Dress Dress</h3>
-      <p>$129.00</p>  
+      <p class="price">$129.00</p>  
     </div>
-    </div>
-    <div class="gallery-cell2">
+    <div class="carousel-cell">
+      <img src="images/blue-hipster-backpack.jpg">  
       <p class="product-type">Bags</p>
       <h3>Blue Hipster Backpack</h3>
-      <p>$69.00</p>
+      <p class="price">$69.00</p>
     </div>
-    <div class="gallery-cell3">
+    <div class="carousel-cell">
+      <img src="images/blue-silk-dress.jpg">  
       <p class="product-type">Dresses</p>
       <h3>Blue Silk Dress</h3>
-      <p>$119.00</p>
+      <p class="price">$119.00</p>
     </div>
-    <div class="gallery-cell4">
+    <div class="carousel-cell">
+      <img src="images/stretch-knit-dress.jpg">
       <p class="product-type">Dresses</p>
       <h3>Stretch Knit Dress</h3>
-      <p>$169.00</p>
+      <p class="price">$169.00</p>
     </div> 
-    <div class="gallery-cell5">
+    <div class="carousel-cell">
+      <img src="images/cotton-blue-shirt.jpg">
       <p class="product-type">Shirts</p>
       <h3>Cotton Blue Shirts</h3>
-      <p>$89.00</p>
+      <p class="price">$89.00</p>
     </div>
-    <div class="gallery-cell6">
+    <div class="carousel-cell">
+      <img src="images/pink-dotted-dress.jpg">  
       <p class="product-type">Dresses</p>
       <h3>Pink Dotted Dress</h3>
-      <p>$99.00</p>
+      <p class="price">$99.00</p>
     </div>
-    <div class="gallery-cell7">
+    <div class="carousel-cell">
+      <img src="images/cotton-yellow-tshirt.jpg">
       <p class="product-type">Shirts</p>
       <h3>Cotton Yellow Tshirt</h3>
-      <p>$39.00</p>
+      <p class="price">$39.00</p>
     </div>
-    <div class="gallery-cell8">
+    <div class="carousel-cell">
+      <img src="images/demin-overall-shorts.jpg">  
       <p class="product-type">Shorts</p>
       <h3>Denim Overall Shorts</h3>
-      <p>$89.00</p>
+      <p class="price">$89.00</p>
     </div>
-  </div>
+  </div>  
 </section>  
 
 <!-- Newsletter .................................................... -->   
@@ -218,5 +224,16 @@ selection of products or sign-up for updates below.</p>
       </div>
     </footer>
 <script src="flickity.pkgd.js"></script>
+
+<script>
+  var elem = document.querySelector('.main-carousel');
+  var flty = new Flickity(elem, {
+    cellAlign: 'left',
+    contain: true,
+    percentPosition: false,
+    groupCells: true
+  })
+</script>
+
 </body>
 </html>    
