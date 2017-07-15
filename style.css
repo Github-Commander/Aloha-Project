@@ -11,6 +11,7 @@
 html {
   font-size: 14px;
   margin: 0 auto;
+  background-color: rgb(255,255,255);
 }
 body,button,input,select,textarea {
   color: #2d2d2d;
@@ -110,6 +111,7 @@ ol, ul {
   height: 82px;
   margin: -82px 0 0;
   text-decoration: none;
+  font-size: 18px;
 }
 .navigation li {
   display: inline-block;
@@ -123,6 +125,9 @@ ul {
 }
 li {
   color: red;  
+}
+#border {
+  display: none;
 }
 
 /***************** Banner *********************/
@@ -587,7 +592,13 @@ section h2 {
 .logo img {
   width: 50%;
   height: auto;
+  margin-right: 10px;
   
+}
+.cart img {
+  width: 70px;
+  margin-top: -10px;
+    margin-bottom: 25px;
 }
   .cart {
     -ms-flex-item-align: end;
@@ -599,14 +610,14 @@ section h2 {
     width: 50px;
   }
 .navigation {
-  align-self: center; 
-  order: 2;
-  flex-basis: 100%;
+  position: absolute;
+  top: 110px;
+  width: 95%;
 }
 .navigation ul {
   text-align: center;  
   padding-top: 2%;
-  border-bottom: 1px solid #d7d7d7;
+  border-top: 1px solid #d7d7d7;
 }
 ol, ul {
   list-style: none;  
@@ -678,6 +689,23 @@ right: 312px;
     display: flex;
     justify-content: space-between;
     margin-left: 190px;
+}
+.site-header {
+  margin-bottom: -30px;
+}
+.banner {
+  margin-top: 20px;
+  height: 400px;
+  position: relative;
+      background-size: cover,150px 369px,cover;
+    height: 400px;
+    position: relative;
+    margin-top: 50px;
+}
+#border {
+  border-top: 2px solid darkgrey;
+  margin-bottom: 13px;
+  margin-top: 16px;
 }
 }
 
