@@ -32,6 +32,7 @@ padding-bottom: 1rem;
 padding-left: 2%;
 padding-right: 2%;
 margin-top: 1.5rem;
+white-space: nowrap;
 }
 .logo {
 flex-basis: 20%;
