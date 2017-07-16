@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" href="reset.css">
      <link rel="stylesheet" type="text/css" href="style.css"> 
-     <link rel="stylesheet" href="flickity.css" media="screen">
+     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body>
 
@@ -88,7 +88,7 @@ selection of products or sign-up for updates below.</p>
 </div>
 <div class="category-wide womens">
 <span class="category-name">
-<a href="#">Womens</a>
+<a href="#">Women's</a>
 </span>  
 </div>       
 </div>
@@ -99,56 +99,56 @@ selection of products or sign-up for updates below.</p>
 <section class="featured" id="featured">
 <div class="carousel-container">
 <h2>Most-Loved <span class="bolded">Products</span></h2>
-  <div class="gallery main-carousel">
-    <div class="carousel-cell">
-      <img src="images/checked-stretch-dress.jpg" alt="checked stretch dress">
-      <p class="product-type">Dresses</p>
-      <h3>Checekd Stretch Dress Dress</h3>
-      <p class="price">$129.00</p>  
-    </div>
-    <div class="carousel-cell">
-      <img src="images/blue-hipster-backpack.jpg" alt="blue hipster backpack">  
-      <p class="product-type">Bags</p>
-      <h3>Blue Hipster Backpack</h3>
-      <p class="price">$69.00</p>
-    </div>
-    <div class="carousel-cell">
-      <img src="images/blue-silk-dress.jpg" alt="blue silk dress">  
-      <p class="product-type">Dresses</p>
-      <h3>Blue Silk Dress</h3>
-      <p class="price">$119.00</p>
-    </div>
-    <div class="carousel-cell">
-      <img src="images/stretch-knit-dress.jpg" alt="stretch knit dress">
-      <p class="product-type">Dresses</p>
-      <h3>Stretch Knit Dress</h3>
-      <p class="price">$169.00</p>
-    </div> 
-    <div class="carousel-cell">
-      <img src="images/cotton-blue-shirt.jpg" alt="cotton blue shirt"
+  <div class="carousel" data-flickity='{ "autoPlay": true }' >
+      <div class="carousel-cell">
+        <img src="images/checked-stretch-dress.jpg" alt="checked stretch dress">
+        <p class="product-type">Dresses</p>
+        <h3>Checekd Stretch Dress Dress</h3>
+        <p class="price">$129.00</p>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/blue-hipster-backpack.jpg" alt="blue hipster backpack">  
+        <p class="product-type">Bags</p>
+        <h3>Blue Hipster Backpack</h3>
+        <p class="price">$69.00</p>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/blue-silk-dress.jpg" alt="blue silk dress">  
+        <p class="product-type">Dresses</p>
+        <h3>Blue Silk Dress</h3>
+        <p class="price">$119.00</p>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/stretch-knit-dress.jpg" alt="stretch knit dress">
+        <p class="product-type">Dresses</p>
+        <h3>Stretch Knit Dress</h3>
+        <p class="price">$169.00</p>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/cotton-blue-shirt.jpg" alt="cotton blue shirt">
       <p class="product-type">Shirts</p>
       <h3>Cotton Blue Shirts</h3>
       <p class="price">$89.00</p>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/pink-dotted-dress.jpg" alt="pink dotted dress">  
+        <p class="product-type">Dresses</p>
+        <h3>Pink Dotted Dress</h3>
+        <p class="price">$99.00</p>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/cotton-yellow-tshirt.jpg" alt="cotton yellow tshirt">
+        <p class="product-type">Shirts</p>
+        <h3>Cotton Yellow Tshirt</h3>
+        <p class="price">$39.00</p>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/demin-overall-shorts.jpg" alt="denim overall shorts">  
+        <p class="product-type">Shorts</p>
+        <h3>Denim Overall Shorts</h3>
+        <p class="price">$89.00</p>
+      </div>
     </div>
-    <div class="carousel-cell">
-      <img src="images/pink-dotted-dress.jpg" alt="pink dotted dress">  
-      <p class="product-type">Dresses</p>
-      <h3>Pink Dotted Dress</h3>
-      <p class="price">$99.00</p>
-    </div>
-    <div class="carousel-cell">
-      <img src="images/cotton-yellow-tshirt.jpg" alt="cotton yellow tshirt">
-      <p class="product-type">Shirts</p>
-      <h3>Cotton Yellow Tshirt</h3>
-      <p class="price">$39.00</p>
-    </div>
-    <div class="carousel-cell">
-      <img src="images/demin-overall-shorts.jpg" alt="denim overall shorts">  
-      <p class="product-type">Shorts</p>
-      <h3>Denim Overall Shorts</h3>
-      <p class="price">$89.00</p>
-    </div>
-  </div> 
 </div>
 </section>  
 
@@ -226,16 +226,7 @@ selection of products or sign-up for updates below.</p>
   src="https://code.jquery.com/jquery-3.2.1.slim.js"
   integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
   crossorigin="anonymous"></script>
-<script src="flickity.pkgd.js"></script>
-
-<script>
-  var elem = document.querySelector('.main-carousel');
-  var flty = new Flickity(elem, {
-    cellAlign: 'left',
-    contain: true,
-    percentPosition: false,
-    groupCells: true
-  })
-</script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="jQuery.js"></script>
 </body>
 </html>    

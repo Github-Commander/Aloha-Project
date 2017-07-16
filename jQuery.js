@@ -1,9 +1,16 @@
-$('.main-carousel').flickity({
-  // options
-  cellAlign: 'left',
-  contain: true
-});
 
 $(":submit").click (function () {
 alert("Please submit your email address")
 });
+ var elem = document.querySelector('.main-carousel');
+  var flty = new Flickity(elem, {
+    cellAlign: 'left',
+    contain: true,
+    percentPosition: false,
+    groupCells: true
+  })
+  $('.main-carousel').flickity({
+  cellAlign: 'left',
+  contain: true
+});
+    
