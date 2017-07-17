@@ -543,6 +543,13 @@ section h2 {
   font-size: 45px;
 }
 
+.flickity-prev-next-button.next {
+  display: none;
+}
+
+.flickity-prev-next-button.previous {
+  display: none;
+}
 /*my fonts*/
 @font-face {
   font-family: 'Raleway-Medium';
