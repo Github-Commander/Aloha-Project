@@ -1,7 +1,4 @@
 
-$(":submit").click (function () {
-alert("Please submit your email address")
-});
  var elem = document.querySelector('.main-carousel');
   var flty = new Flickity(elem, {
     cellAlign: 'left',
