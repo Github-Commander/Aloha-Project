@@ -241,8 +241,13 @@ font-size: 1.15em;
   font-size: 1.8rem;
 }
 .about-text h2 {
-  margin-bottom: 1px;
+  margin-bottom: 30px;
   font-size: 60px;
+}
+
+.about-text pre {
+  font-size: 30px;
+  white-space: pre-wrap;
 }
 
 /************************* Products ***********************/
@@ -275,6 +280,10 @@ font-size: 1.15em;
 .category-name a{
   text-decoration: none;
   color: white;
+}
+.category-name a:hover {
+  color: #e2574c;
+  cursor: pointer;
 }
 img {
   height: auto;
@@ -406,7 +415,7 @@ img {
   font-size: 50px;
 }
 input[type="email"] {
-  padding: .5rem 1.75rem;
+  padding: 1.6rem 1.75rem;
   padding-right: 35px;
   width: 50.5%;
   border-radius: 25px;
@@ -421,12 +430,13 @@ input[type="submit"] {
   padding: .5rem 2.4rem; 
   position: absolute;
   right: 25%;
-  top: 0;
+  top: 2.9px;
   border-radius: 25px;
   border-color: 1px white;
   margin: 0 auto;
   height: auto;
   border:0;
+  font-size: 15px
 }
 .sign-up {
   display: block;
@@ -535,7 +545,7 @@ section h2 {
   left: 20px;
 }
 .price {
-  color: grey;
+  color: #969696;
   text-align: center;
 }
 
