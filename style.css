@@ -58,17 +58,17 @@ table {
   outline: none;
 }
 html {
-  font-size: 14px;
+  font-size: 16px;
   margin: 0 auto;
   background-color: rgb(255,255,255);
 }
 body,button,input,select,textarea {
   color: #2d2d2d;
-  font-size: 1rem;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 2;
-  font-family: 'Raleway-Regular', sans-serif; 
+  font-family: 'Raleway-Light', sans-serif; 
 }
 
 /****************** Header ***********************/
@@ -421,7 +421,7 @@ input[type="submit"] {
   padding: .5rem 2.4rem; 
   position: absolute;
   right: 25%;
-  top: .2rem;
+  top: 0;
   border-radius: 25px;
   border-color: 1px white;
   margin: 0 auto;
@@ -651,6 +651,7 @@ section h2 {
     flex-flow: column wrap;
     padding: 0;
     text-align: center;
+    font-size: 14px;
   }
   .logo {
     -ms-flex-item-align: start;
