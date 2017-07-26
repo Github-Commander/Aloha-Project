@@ -186,7 +186,7 @@ table {
     src: url('fonts/Raleway-MediumItalic.woff2') format('woff2'), url('fonts/Raleway-MediumItalic.woff') format('woff'), url('fonts/Raleway-MediumItalic.ttf') format('truetype'), url('fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg'), url('fonts/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
-
+}
 /* ------------------- Desktop ----------1240px--------------- */
 /************* Body ******************/
 
@@ -987,4 +987,8 @@ section h2 {
    top: 5px;
    width: auto;
    z-index: 100000; /* above all content */
+}
+
+*:focus {
+    color: lightblue;
 }
