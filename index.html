@@ -18,6 +18,8 @@
 
     <!-- Header ....................................................... -->
 
+    <a class="screen-reader-text" href="#main">Skip to content</a>
+
     <header class="site-header">
         <div class="logo">
             <h1 id="screen-reader-text"></h1>
@@ -29,6 +31,7 @@
         </div>
 
         <!-- Navigation ................................................... -->
+
         <div id="border"></div>
         <nav class="navigation">
             <ul>
@@ -49,7 +52,7 @@
     <section class="banner">
         <div class="banner-text-container">
             <p class="collection">New Collection</p>
-            <p class="season">Spring/Summer 2017</p>
+            <p class="season"> <span class="capital">s</span>pring/<span class="capital">s</span>ummer 2017</p>
         </div>
     </section>
 
@@ -164,8 +167,12 @@
             <h2>Sign-up for <span class="bolded">Updates</span></h2>
             <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
             <form class="sign-up">
+                <label for="your-email">
                 <input type="email" required="required" name="your_email" id="your-email" value="" placeholder="Your Email">
+                </label>
+                <label for="submit">
                 <input type="submit" name="subscribe" value="Subscribe">
+                </label>
             </form>
         </div>
     </section>
@@ -229,11 +236,6 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="jQuery.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
-    <script>
-        $(':button').click(function() {
-            alert('Thanks for Submitting Your Email');
-        });
-    </script>
+<script src="tally.js"></script>
 </body>
-
 </html>

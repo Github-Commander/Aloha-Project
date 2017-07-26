@@ -1,4 +1,4 @@
-
+$('document').ready (function () {
  var elem = document.querySelector('.main-carousel');
   var flty = new Flickity(elem, {
     cellAlign: 'left',
@@ -33,3 +33,14 @@ $(document).ready(function(){
     } // End if
   });
 });    
+$(function() {
+   $("a[href^='#']").not("a[href='#']").click(function() {
+      $("#"+$(this).attr("href").slice(1)+"").focus();
+   });
+});
+     <script>
+        $(':button').click(function() {
+            alert('Thanks for Submitting Your Email');
+        });
+</script>
+});
