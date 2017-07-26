@@ -38,9 +38,9 @@ $(function() {
       $("#"+$(this).attr("href").slice(1)+"").focus();
    });
 });
-     <script>
+   
         $(':button').click(function() {
             alert('Thanks for Submitting Your Email');
         });
-</script>
+
 });

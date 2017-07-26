@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 
+
 html,
 body,
 div,
@@ -186,7 +187,7 @@ table {
     src: url('fonts/Raleway-MediumItalic.woff2') format('woff2'), url('fonts/Raleway-MediumItalic.woff') format('woff'), url('fonts/Raleway-MediumItalic.ttf') format('truetype'), url('fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg'), url('fonts/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
-
+}
 /* ------------------- Desktop ----------1240px--------------- */
 /************* Body ******************/
 
