@@ -136,28 +136,28 @@ table {
     font-family: 'Raleway-Medium';
     src: url('fonts/Raleway-Medium.eot');
     src: url('fonts/Raleway-Medium.woff2') format('woff2'), url('fonts/Raleway-Medium.woff') format('woff'), url('fonts/Raleway-Medium.ttf') format('truetype'), url('fonts/Raleway-Medium.svg#Raleway-Medium') format('svg'), url('fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'Raleway-LightItalic';
     src: url('fonts/Raleway-LightItalic.eot');
     src: url('fonts/Raleway-LightItalic.woff2') format('woff2'), url('fonts/Raleway-LightItalic.woff') format('woff'), url('fonts/Raleway-LightItalic.ttf') format('truetype'), url('fonts/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg'), url('fonts/Raleway-LightItalic.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: 300;
+    font-style: italic;
 }
 @font-face {
     font-family: 'Raleway-Light';
     src: url('fonts/Raleway-Light.eot');
     src: url('fonts/Raleway-Light.woff2') format('woff2'), url('fonts/Raleway-Light.woff') format('woff'), url('fonts/Raleway-Light.ttf') format('truetype'), url('fonts/Raleway-Light.svg#Raleway-Light') format('svg'), url('fonts/Raleway-Light.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'PlayfairDisplay-Regular';
     src: url('fonts/PlayfairDisplay-Regular.eot');
     src: url('fonts/PlayfairDisplay-Regular.woff2') format('woff2'), url('fonts/PlayfairDisplay-Regular.woff') format('woff'), url('fonts/PlayfairDisplay-Regular.ttf') format('truetype'), url('fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg'), url('fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 @font-face {
@@ -165,20 +165,20 @@ table {
     src: url('fonts/PlayfairDisplay-Italic.eot');
     src: url('fonts/PlayfairDisplay-Italic.woff2') format('woff2'), url('fonts/PlayfairDisplay-Italic.woff') format('woff'), url('fonts/PlayfairDisplay-Italic.ttf') format('truetype'), url('fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg'), url('fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 }
 @font-face {
     font-family: 'PlayfairDisplay-BoldItalic';
     src: url('fonts/PlayfairDisplay-BoldItalic.eot');
     src: url('fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'), url('fonts/PlayfairDisplay-BoldItalic.woff') format('woff'), url('fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'), url('fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg'), url('fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: bold;
+    font-style: italic;
 }
 @font-face {
     font-family: 'PlayfairDisplay-Bold';
     src: url('fonts/PlayfairDisplay-Bold.eot');
     src: url('fonts/PlayfairDisplay-Bold.woff2') format('woff2'), url('fonts/PlayfairDisplay-Bold.woff') format('woff'), url('fonts/PlayfairDisplay-Bold.ttf') format('truetype'), url('fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg'), url('fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 @font-face {
@@ -186,10 +186,76 @@ table {
     src: url('fonts/Raleway-MediumItalic.eot');
     src: url('fonts/Raleway-MediumItalic.woff2') format('woff2'), url('fonts/Raleway-MediumItalic.woff') format('woff'), url('fonts/Raleway-MediumItalic.ttf') format('truetype'), url('fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg'), url('fonts/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 }
 /* ------------------- Desktop ----------1240px--------------- */
+
+@media (max-width:985px) and (min-width:600px) { 
+    .season {
+        line-height: 70px;
+    }
+}
+@media only screen and (min-width: 300px){
+.newsletter-container {
+    line-height: 40px;
+    padding-top: 0px;
+}
+.newsletter h2 {
+    line-height: 60px;
+}
+
+}
+
+/*  @media only screen and (min-width: 10px) {
+    .newsletter-container {
+        padding-top: 0px;
+ } */
+  
+
+/* @media only screen and (min-width: 1240px) {
+    .container {
+        max-width: 1240px
+    }
+    .logo img {
+        max-width: 160px
+    }
+    .cart {
+        width: 62px
+    }
+    .main-navigation li {
+        font-size: 1rem;
+        margin: 1rem
+    }
+    .banner {
+        background-size: cover, 250px 615px, contain;
+        height: 550px;
+        position: relative
+    }
+    .season {
+        font-size: 4rem
+    }
+    .about-text {
+        width: 720px
+    }
+    .category-name {
+        font-size: 2.4rem
+    }
+    .floated .product-wrapper,
+    .product-wrapper {
+        margin-bottom: 0;
+        width: 25%
+    }
+    .sign-up-wrapper {
+        width: 720px
+    }
+    .social {
+        padding-right: 4rem
+    }
+} */
+
+
 /************* Body ******************/
+
 
 * {
     -webkit-box-sizing: border-box;
@@ -338,7 +404,7 @@ ul {
 li {
     color: red;
 }
-#border {
+.border {
     display: none;
 }
 /***************** Banner *********************/
@@ -446,14 +512,14 @@ section {
     transform: translate(-30%, -30%);
     text-align: center;
     top: 50%;
-    text-shadow: 2px 2px grey;
+    text-shadow: 2px 2px 4px hsla(0,0%,39%,.8)
 }
 .category-name a {
     text-decoration: none;
     color: white;
 }
 .category-name a:hover {
-    color: #e2574c;
+    color: hsl(26.1, 51.6%, 65.7%);
     cursor: pointer;
 }
 img {
@@ -585,12 +651,15 @@ img {
     font-size: 1.5rem;
     text-shadow: 2px 2px 4px hsla(0, 0%, 39%, .8);
 }
+.newsletter {
+    display: table;
+}
 .newsletter-container {
     text-align: center;
     width: 100%;
     margin: 0 auto;
-    padding-top: 70px;
     position: relative;
+    display: table-cell;
 }
 .bolded {
     font-weight: 700;
@@ -781,6 +850,7 @@ section h2 {
         padding: 0;
         text-align: center;
         font-size: 14px;
+        box-sizing: border-box;
     }
     .logo {
         -ms-flex-item-align: start;
@@ -871,12 +941,15 @@ section h2 {
         line-height: 1.5;
         width: 100%;
         text-align: center;
+        margin-right: -150px;
     }
     .season {
         font-size: 2.5em;
+        line-height: 40px;        
     }
     .newsletter h2 {
         margin-top: 0;
+        line-height: 4rem;
     }
     .social {
         line-height: 30px;
@@ -885,7 +958,7 @@ section h2 {
         margin-right: 400px;
         display: inline-table;
         position: relative;
-        right: 195px;
+        right: 40px;
     }
     .copyright {
         white-space: nowrap;
@@ -914,7 +987,7 @@ section h2 {
         margin-top: 50px;
         width: 100%;
     }
-    #border {
+    .border {
         border-top: 2px solid darkgrey;
         margin-bottom: 13px;
         margin-top: 16px;
@@ -989,3 +1062,6 @@ section h2 {
    width: auto;
    z-index: 100000; /* above all content */
 }
+ .collection {
+    line-height: 40px;
+} 
