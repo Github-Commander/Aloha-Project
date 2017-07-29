@@ -1062,6 +1062,13 @@ section h2 {
    width: auto;
    z-index: 100000; /* above all content */
 }
+<<<<<<< HEAD
  .collection {
     line-height: 40px;
 } 
+=======
+
+*:focus {
+    color: lightblue;
+}
+>>>>>>> 6141f713d262f474e5cd007aff36fa46b32fa6e9
