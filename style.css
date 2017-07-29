@@ -954,11 +954,7 @@ section h2 {
     .social {
         line-height: 30px;
         width: 100%;
-        margin-top: 400px;
-        margin-right: 400px;
-        display: inline-table;
-        position: relative;
-        right: 40px;
+        text-align: center;
     }
     .copyright {
         white-space: nowrap;
@@ -972,6 +968,7 @@ section h2 {
         -ms-flex-pack: justify;
         justify-content: space-between;
         margin-left: 190px;
+        display: table-cell
     }
     .site-header {
         margin-bottom: -30px;
@@ -1033,6 +1030,7 @@ section h2 {
 }
 .site-footer {
     width: 100%;
+    display: table;
 }
 .navigation ul li a {
     width: 100%;
