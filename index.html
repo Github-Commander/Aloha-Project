@@ -4,6 +4,7 @@
 <!-- Head ..........................................................-->
 
 <head>
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/3a9bf8ab8c.js"></script>
     <title>Aloha Apparel co.</title>
     <meta charset="utf-8">
@@ -107,7 +108,8 @@
     <section class="featured" id="featured">
         <div class="carousel-container">
             <h2>Most-Loved <span class="bolded">Products</span></h2>
-            <div class="carousel" data-flickity='{ "autoPlay": true }'>
+             <!-- <div class="carousel" data-flickity='{ "autoPlay": true }'>  -->
+                <div class="main-carousel">
                 <div class="carousel-cell">
                     <img src="images/checked-stretch-dress.jpg" alt="checked stretch dress">
                     <p class="product-type">Dresses</p>
@@ -166,12 +168,10 @@
         <div class="newsletter-container">
             <h2>Sign-up for <span class="bolded">Updates</span></h2>
             <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
-            <form class="sign-up">
+            <form class="sign-up" method="post">
                 <label for="your-email">
-                <input type="email" required="required" name="your_email" id="your-email" value="" placeholder="Your Email">
-                </label>
-                <label for="submit">
-                <input type="submit" name="subscribe" value="Subscribe">
+                <input id="your-email" type="email" required="required" name="your_email" value="" placeholder="Your Email">
+                <input id="your-submit" type="submit" name="subscribe" value="Subscribe">
                 </label>
             </form>
         </div>
@@ -231,9 +231,9 @@
             </ul>
         </div>
     </footer>
-    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script async src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <!-- <script src="jQuery.js"></script> -->
+    <!-- <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+     <script async src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 
+     <script src="jQuery.js"></script> 
 <!-- <script src="tally.js"></script> -->
 </body>
 </html>

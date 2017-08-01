@@ -1,12 +1,27 @@
-$('document').ready (function () {
+$(document).ready(function() {
+function validEmail(emailAddress) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(emailAddress);
+} 
  var elem = document.querySelector('.main-carousel');
-  var flty = new Flickity(elem, {
+//  var flty = new Flickity(elem, {
+//     cellAlign: 'left',
+//     contain: true,
+//     percentPosition: false,
+//     groupCells: true,
+//     contain: true
+//   });
+
+  $('.main-carousel').flickity({
     cellAlign: 'left',
     contain: true,
     percentPosition: false,
     groupCells: true,
-    contain: true
-  })
+    contain: true,
+    autoPlay: false,
+    draggable: true,
+  });
+
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
@@ -23,11 +38,20 @@ $('document').ready (function () {
         window.location.hash = hash;
       });
     } // End if
+  });    
+  //  $("a[href^='#']").not("a[href='#']").click(function() {
+  //     $("#"+$(this).attr("href").slice(1)+"").focus();
+  //  });
+  //       $(':button').click(function() {
+  //           alert('Thanks for Submitting Your Email');
+  //       });
+
+  $("#your-submit").click(function(){
+    
+    if(validEmail($("#your-email").val())){
+      alert("Thanks for subscribing!");
+      $("#your-email").val("");
+    }
   });
-});    
-   $("a[href^='#']").not("a[href='#']").click(function() {
-      $("#"+$(this).attr("href").slice(1)+"").focus();
-   });
-        $(':button').click(function() {
-            alert('Thanks for Submitting Your Email');
-        });
+
+});

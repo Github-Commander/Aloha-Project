@@ -206,54 +206,6 @@ table {
 
 }
 
-/*  @media only screen and (min-width: 10px) {
-    .newsletter-container {
-        padding-top: 0px;
- } */
-  
-
-/* @media only screen and (min-width: 1240px) {
-    .container {
-        max-width: 1240px
-    }
-    .logo img {
-        max-width: 160px
-    }
-    .cart {
-        width: 62px
-    }
-    .main-navigation li {
-        font-size: 1rem;
-        margin: 1rem
-    }
-    .banner {
-        background-size: cover, 250px 615px, contain;
-        height: 550px;
-        position: relative
-    }
-    .season {
-        font-size: 4rem
-    }
-    .about-text {
-        width: 720px
-    }
-    .category-name {
-        font-size: 2.4rem
-    }
-    .floated .product-wrapper,
-    .product-wrapper {
-        margin-bottom: 0;
-        width: 25%
-    }
-    .sign-up-wrapper {
-        width: 720px
-    }
-    .social {
-        padding-right: 4rem
-    }
-} */
-
-
 /************* Body ******************/
 
 
@@ -295,8 +247,12 @@ textarea {
     padding-bottom: 1rem;
     padding-left: 2%;
     padding-right: 2%;
-    margin-top: 1.5rem;
     white-space: nowrap;
+    z-index: 10;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    box-shadow: 1px 1px grey;
 }
 .logo {
     -ms-flex-preferred-size: 20%;
@@ -885,7 +841,7 @@ section h2 {
     }
     .navigation {
         position: absolute;
-        top: 110px;
+        top: 80px;
         width: 95%;
     }
     .navigation ul {
@@ -1059,6 +1015,9 @@ section h2 {
    top: 5px;
    width: auto;
    z-index: 100000; /* above all content */
+}
+.collection {
+    line-height: 30px;
 }
 <<<<<<< HEAD
  .collection {
